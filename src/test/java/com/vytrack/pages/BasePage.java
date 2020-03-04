@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 //everything that is in common among pages
-
+//can go here
 //for example top menu elements don't belong to specific page
 //top menu appears on every single page
 //so we can keep them here
