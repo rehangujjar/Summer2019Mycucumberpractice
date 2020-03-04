@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import sun.swing.StringUIClientPropertyKey;
 
 public class Driver {
     private static WebDriver driver;
@@ -26,6 +25,7 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     //to configure chrome browser for tests
+
                     driver = new ChromeDriver();
                     break;
                 case "chrome_headless":

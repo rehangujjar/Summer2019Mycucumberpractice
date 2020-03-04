@@ -4,7 +4,7 @@ import com.vytrack.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class VehiclesPage extends BasePage{
+public class VehiclesPage extends BasePage {
 
     @FindBy(css = "[title='Create Car']")
     public WebElement createACarElement;

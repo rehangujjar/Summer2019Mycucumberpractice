@@ -4,17 +4,19 @@ package com.vytrack.utilities;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.function.Function;
 
 public class BrowserUtils {
 
     //It will be used to pause our test execution
+    //br
     //just provide number of seconds as a parameter
     public static void wait(int seconds) {
         try {
@@ -163,5 +165,25 @@ public class BrowserUtils {
         wait.until(ExpectedConditions.titleIs(pageTitle));
 
     }
+
+    public static List<String> getListOfString(List<WebElement> listOfWebElements) {
+        List<String> listOFStrings = new ArrayList<>();
+
+        for (WebElement element : listOfWebElements) {
+
+         // listOFStrings.add(element.getText().trim());
+        String value=element.getText().trim();
+        //if there no text dont ender blank text into list
+        if(value.length()>0){
+            listOFStrings.add(value);
+        }
+
+
+        }
+        return listOFStrings;
+    }
+
+
+
 
 }
