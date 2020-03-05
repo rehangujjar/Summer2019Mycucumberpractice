@@ -1,5 +1,6 @@
 package com.vytrack.utilities;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -16,7 +17,6 @@ public class Driver {
    private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
     //    you cannot do like this, if constructor is private Driver obj = new Driver()
     private Driver() {
-
     }
     //if switch statement complains on string parameter
     //change java version to 7+, better at least 8
