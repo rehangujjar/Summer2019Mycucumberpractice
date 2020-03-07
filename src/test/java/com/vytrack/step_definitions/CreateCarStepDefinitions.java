@@ -24,17 +24,19 @@ public class CreateCarStepDefinitions {
     }
 
     @Then("user adds new car information:")
-    public void user_adds_new_car_information(List<Map<String,String>> dataTable) {
+    public void user_adds_new_car_information(List<Map<String, String>> dataTable) {
         createCarPage.waitUntilLoaderMaskDisappear();
-        int row=1;
-      for(Map<String,String> map: dataTable){
+
+        int row = 1;
+      for(Map<String, String> map: dataTable){
        createCarPage.licensePlateElement.sendKeys(map.get("License Plate"));
        createCarPage.driverElement.sendKeys(map.get("Driver"));
        createCarPage.locationElement.sendKeys(map.get("Location"));
        createCarPage.modelYearElement.sendKeys(map.get("Model Year"));
-          createCarPage.colorElement.sendKeys(map.get("Color"));
+       createCarPage.colorElement.sendKeys(map.get("Color"));
           BrowserUtils.wait(2);
-          if(row==dataTable.size()){
+
+          if(row == dataTable.size()){
               createCarPage.clickSaveAndClose();
           }
           else {

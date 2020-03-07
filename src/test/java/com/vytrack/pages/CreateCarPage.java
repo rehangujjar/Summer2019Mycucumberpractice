@@ -23,7 +23,7 @@ public class CreateCarPage extends BasePage {
     @FindBy(xpath = "//li//button[contains(text(),'Save and New')]")
     public WebElement saveAndNew;
 
-    @FindBy(xpath = "//li//button[contains(text(),'Save and close')]")
+    @FindBy(xpath = "//li//button[contains(text(),'Save and Close')]")
     public WebElement saveAndCloseButtonFromMenuElement;
 
 
@@ -104,13 +104,14 @@ public class CreateCarPage extends BasePage {
         waitUntilLoaderMaskDisappear();
         BrowserUtils.clickWithWait(saveAndCloseToggle);
         BrowserUtils.waitForVisibility(saveAndNew, 5);
-        BrowserUtils.clickWithWait(saveAndNew );
+        BrowserUtils.clickWithWait(saveAndNew);
 
     }
+
     public void clickSaveAndClose(){
         waitUntilLoaderMaskDisappear();
         BrowserUtils.clickWithWait(saveAndCloseToggle);
         BrowserUtils.waitForVisibility(saveAndCloseButtonFromMenuElement, 5);
-        BrowserUtils.clickWithWait(saveAndCloseButtonFromMenuElement );
+        BrowserUtils.clickWithWait(saveAndCloseButtonFromMenuElement);
     }
 }
