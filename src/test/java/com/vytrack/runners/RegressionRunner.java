@@ -21,6 +21,5 @@ import org.junit.runner.RunWith;
         //inside the target because that was the path html:target/default-cucumber-reports
 )
 
-
 public class RegressionRunner {
 }
