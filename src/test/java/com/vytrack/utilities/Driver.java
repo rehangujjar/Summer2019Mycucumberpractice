@@ -79,7 +79,8 @@ public class Driver {
             //close all browsers
             driverPool.get().quit();
             //destroy driver object, ready for gc
-            driverPool = null;
+            driverPool.remove();
+
         }
     }
 }
