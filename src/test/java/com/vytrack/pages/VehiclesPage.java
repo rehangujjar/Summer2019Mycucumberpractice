@@ -17,6 +17,6 @@ public class VehiclesPage extends BasePage {
         BrowserUtils.waitForVisibility(createACarElement, 15);
         BrowserUtils.waitForClickablility(createACarElement, 15);
         createACarElement.click();
-       
+
     }
 }
