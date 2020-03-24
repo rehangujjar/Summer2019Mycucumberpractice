@@ -31,6 +31,7 @@ import org.junit.runner.RunWith;
        }
         // in the plugin we generate report which later on show us in the targer.default-cucumber-reports under the resource file
         //inside the target because that was the path html:target/default-cucumber-reports
+        //inside the target because that was the path html:target/default-cucumber-reports
 )
 
 
