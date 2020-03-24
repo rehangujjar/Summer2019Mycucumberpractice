@@ -10,7 +10,7 @@ import java.util.List;
 public class CalenderEventsStepDefinitions {
 
     CalendarEventsPage calendarEventsPage=new CalendarEventsPage();
- /// ree
+
     @Then("user verifies that column names are displayed")
     public void user_verifies_that_column_names_are_displayed(List<String> dataTable) {
                   System.out.println(dataTable);
