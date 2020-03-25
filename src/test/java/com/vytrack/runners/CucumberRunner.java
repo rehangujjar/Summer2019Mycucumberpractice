@@ -20,9 +20,9 @@ import org.junit.runner.RunWith;
       //  tags = "@calender_events";
               //s    tags ="@create_car",
        // tags="@store_manager",
-        //if Scenarios have more than 2 tags we can call that by using "And " key word  like in feature file we have negative and driver Scenario together
+        //if Scenarios have more than 2 tags we can call that by using "And" key word  like in feature file we have negative and driver Scenario together
        // tags = "@negative_test and @driver",
-        //we can create any tag name like modules ,type of test, like @smoke ,@regression, user story number @Vyt-1234
+        //we can create any tag name like modules ,type of test, like @smoke, @regression, user story number @Vyt-1234
         // if tags calling annotation are not availabe nothing will run
         //dd in the plugin we
         plugin={"html:target/default-cucumber-reports",
@@ -33,7 +33,6 @@ import org.junit.runner.RunWith;
         //inside the target because that was the path html:target/default-cucumber-reports
         //inside the target because that was the path html:target/default-cucumber-reports
 )
-
 
 public class CucumberRunner {
 }
